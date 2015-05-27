@@ -1,0 +1,10 @@
+{
+"name": "myAppModel",
+"main": "app.js",
+    "dependencies" : {
+	"path" : "latest",
+	"ejs":"latest",	    
+	"express":"latest",	    	
+	"body-parser":"latest",		    
+     }
+}

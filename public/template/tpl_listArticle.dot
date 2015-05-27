@@ -1,0 +1,8 @@
+<table>
+{{~ it.farray :k}}
+	<tr>
+	<td>{{=k.auteur}}</td>
+	<td>{{=k.titre}}</td>
+	</tr>
+{{~}}
+</table>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<meta charset=utf-8>
+<html lang="fr">
+	<head>
+		<title>Asynchrone template</title>
+		<script id="template" type="text/x-dot-template"></script>
+	</head>
+	<body>
+<H1>Liste des articles</H1>
+<div id='TousArticles'></div>
+			
+			
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/dot/1.0.3/doT.min.js"></script>
+<script type="text/javascript" src="/js/loadTemplateEngine.js"></script>
+		
+<script>
+	$(function(){
+		var mData=[
+				{auteur: 'Hugo', titre:'Les miserables'},
+				{auteur: 'Verleine', titre:'Litterature'},
+				{auteur: 'Sartre', titre:'Existentialisme est un humanisme'}
+				];
+		
+		render('tpl_listArticle','TousArticles',mData);
+
+	}); //end document ready jquery
+</script>
+
+	</body>
+</html>
